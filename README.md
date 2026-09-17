@@ -82,6 +82,7 @@ Windows 上也可以直接用系统音效：
 
 - **防连响**：两次提示音间隔小于 1.5 秒时跳过，避免排队消息连续触发。
 - **脚本模式静音**：`-p`（print）和 JSON 模式下默认不发声，避免污染脚本输出。需要强制开启时设 `PI_DONE_SOUND_ALWAYS=1`。
+- **`/sound` 只在 TUI / RPC 模式可用**：`pi -p "/sound list"` 不会执行命令，而是把这段文字当成普通提问交给模型。这是 pi 的模式差异，不是扩展的问题（`pi -p` 下 `ctx.hasUI` 为 `false`）。想用命令请进交互界面，或在 RPC 模式的 `prompt` 里调用。
 - **依赖**：零运行依赖，只有 `@earendil-works/pi-coding-agent` 作为 peer dependency。
 
 ## 内置音源
