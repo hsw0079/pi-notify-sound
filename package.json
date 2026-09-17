@@ -28,6 +28,10 @@
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   }
