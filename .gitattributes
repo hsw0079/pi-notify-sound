@@ -1,0 +1,8 @@
+# 统一换行，避免 Windows 上 CRLF 混入
+* text=auto eol=lf
+
+# 音频是二进制，禁止任何换行转换
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.aiff binary

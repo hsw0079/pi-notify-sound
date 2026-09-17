@@ -1,0 +1,34 @@
+{
+  "name": "pi-notify-sound",
+  "version": "1.0.0",
+  "description": "Play a sound when a Pi coding agent task finishes, with a /sound command to switch or test the sound.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "notify",
+    "notification",
+    "sound",
+    "chime",
+    "done"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "extensions/done-sound.ts"
+    ]
+  },
+  "files": [
+    "extensions",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
